@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 export default function Education() {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 px-6 md:px-12 lg:px-24 font-sans">
+    // Added min-h-screen to ensure full gradient coverage
+    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white min-h-screen py-20 px-6 md:px-12 lg:px-24 font-sans">
       <motion.div
         className="max-w-4xl mx-auto text-left"
         initial={{ opacity: 0, y: 50 }}
@@ -16,8 +17,10 @@ export default function Education() {
             🎓 English/Linguistics, Minor in Mandarin Chinese<br />
             University of Houston
           </p>
-          
-          <h3 className="text-2xl font-semibold text-blue-300 mt-6">Full Stack Web Development</h3>
+
+          <h3 className="text-2xl font-semibold text-blue-300 mt-6">
+            Full Stack Web Development
+          </h3>
           <p className="text-lg mt-2">
             💻 Rice University Coding Boot Camp (2022)
           </p>

@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 px-6 md:px-12 lg:px-24 font-sans">
+    // min-h-screen ensures gradient fills full viewport height
+    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white min-h-screen py-20 px-6 md:px-12 lg:px-24 font-sans">
       <motion.div
         className="max-w-4xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}
