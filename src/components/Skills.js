@@ -16,6 +16,7 @@ export default function Skills() {
       "
       style={{
         backgroundImage: `url(${backgroundImg})`,
+        fontFamily: " 'Playfair Display', serif",
       }}
     >
       <div className="bg-black bg-opacity-40 absolute inset-0"></div>
@@ -26,7 +27,7 @@ export default function Skills() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-extrabold mb-6 text-center">Skills &amp; Expertise</h2>
+        <h2 className="text-6xl font-extrabold font-playfair mb-8 text-center">Skills &amp; Expertise</h2>
         <div className="bg-white bg-opacity-20 backdrop-blur-lg p-6 rounded-lg shadow-lg">
           <p className="text-lg mt-2">
             🔹 Frontend &amp; Backend Development<br />

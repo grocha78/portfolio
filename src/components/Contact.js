@@ -17,6 +17,7 @@ export default function Contact() {
       "
       style={{
         backgroundImage: `url(${backgroundImg})`,
+        fontFamily: " 'Playfair Display', serif",
       }}
     >
       <div className="bg-black bg-opacity-40 absolute inset-0"></div>
@@ -27,7 +28,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-extrabold mb-6">Get in Touch</h2>
+        <h2 className="text-6xl font-extrabold font-playfair mb-8 text-center">Get in Touch</h2>
         <p className="text-lg mb-8">
           I’d love to connect! Whether you want to collaborate, discuss opportunities, or just say hi...
         </p>

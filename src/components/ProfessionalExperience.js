@@ -17,6 +17,7 @@ export function ProfessionalExperience() {
       "
       style={{
         backgroundImage: `url(${backgroundImg})`,
+        fontFamily: " 'Playfair Display', serif",
       }}
     >
       <div className="bg-black bg-opacity-40 absolute inset-0"></div>
@@ -27,7 +28,7 @@ export function ProfessionalExperience() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-extrabold mb-8 text-center">Professional Experience</h2>
+        <h2 className="text-6xl font-extrabold font-playfair mb-8 text-center">Professional Experience</h2>
 
         <div className="bg-white bg-opacity-20 backdrop-blur-lg text-gray-100 rounded-lg p-6 shadow-lg space-y-8">
           {/* A Yancy Life */}
