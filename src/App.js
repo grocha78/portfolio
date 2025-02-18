@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import AboutMe from './components/AboutMe';
+import { AboutMe } from './components/AboutMe';
 import Education from './components/Education';
 import Skills from './components/Skills';
-import ProfessionalExperience from './components/ProfessionalExperience';
+import { ProfessionalExperience } from './components/ProfessionalExperience';
 import Contact from './components/Contact';
 
 function App() {

@@ -1,10 +1,28 @@
+// ProfessionalExperience.js
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import backgroundImg from "../assets/images/my-background.jpg";
 
-export default function ProfessionalExperience() {
+export function ProfessionalExperience() {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 px-6 md:px-12 lg:px-24 font-sans">
+    <section
+      className="
+        relative
+        w-full
+        min-h-screen
+        bg-cover bg-center bg-no-repeat
+        flex items-center justify-center
+        px-6 py-20
+        font-sans
+      "
+      style={{
+        backgroundImage: `url(${backgroundImg})`,
+      }}
+    >
+      <div className="bg-black bg-opacity-40 absolute inset-0"></div>
+
       <motion.div
-        className="max-w-4xl mx-auto text-left"
+        className="relative z-10 max-w-4xl mx-auto text-left text-white"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -103,6 +121,25 @@ export default function ProfessionalExperience() {
           </div>
         </div>
       </motion.div>
+       {/* Back Button at the bottom center - linking to Home page */}
+       <div className="absolute bottom-6 left-0 w-full flex justify-center z-20">
+        <Link
+          to="/"
+          className="
+            bg-white bg-opacity-20
+            hover:bg-opacity-40
+            text-white font-semibold
+            px-6 py-3
+            rounded-full
+            shadow-lg
+            transition
+            transform
+            hover:-translate-y-1
+          "
+        >
+          Back
+        </Link>
+      </div>
     </section>
   );
 }

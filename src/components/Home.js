@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // Import your local image
-import backgroundImg from "../assets//images/my-background.jpg";
+import backgroundImg from "../assets/images/my-background.jpg";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       "
       style={{
         backgroundImage: `url(${backgroundImg})`,
+        fontFamily: " 'Playfair Display', serif",
       }}
     >
       {/* Optional Overlay - make it lighter if you need to see the image clearly */}
@@ -27,11 +28,11 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+        <h1 className="text-6xl font-extrabold font-playfair mb-8">
           Guadalupe Rocha
         </h1>
-        <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
-          Explore my journey as a linguistics-trained web developer, educator,
+        <p className="font-playfair text-2xl leading-relaxed mb-6">
+          Explore my journey as a linguistics-trained educator, web-developer,
           and creative thinker.
         </p>
 
