@@ -28,7 +28,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       >
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
-          Welcome to My Portfolio
+          Guadalupe Rocha
         </h1>
         <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
           Explore my journey as a linguistics-trained web developer, educator,
